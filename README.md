@@ -14,21 +14,21 @@ ROS 2 Humble + Gazeboによる自律移動ロボットのMVPです。
 
 ## Architecture
 
-Camera
-→ Sign Detector
-→ Mission Controller
+カメラ
+→ 標識検出
+→ ミッションコントローラー
 → cmd_vel
-→ Robot Motion
+→ ロボットの動作
 
 ## Sign Rules
 
-LEFT  -> Turn Left
+LEFT  -> 左旋回
 
-RIGHT -> Turn Right
+RIGHT -> 右旋回
 
-STOP  -> Stop 3 Seconds
+STOP  -> 3秒停止
 
-GOAL  -> Mission Complete
+GOAL  -> ミッション完了
 
 ## Topics
 
