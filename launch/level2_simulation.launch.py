@@ -11,21 +11,21 @@ import os
 
 def generate_launch_description():
 
-    pkg_dir = get_package_share_directory(
+    package_directory = get_package_share_directory(
         'pai_rescue_robot'
     )
 
-    sim_launch = os.path.join(
-        pkg_dir,
+    level2_base_launch = os.path.join(
+        package_directory,
         'launch',
-        'mvp_simulation.launch.py'
+        'level2_base_simulation.launch.py'
     )
 
     return LaunchDescription([
 
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
-                sim_launch
+                level2_base_launch
             )
         ),
 
@@ -47,7 +47,11 @@ def generate_launch_description():
             name='obstacle_monitor',
             output='screen',
             parameters=[{
-                'stop_distance': 0.50
+                'stop_distance': 0.50,
+                'clear_distance': 0.60,
+                'minimum_near_points': 3,
+                'detect_frames': 3,
+                'clear_frames': 5
             }]
         ),
 

@@ -40,6 +40,8 @@ setup(
         'console_scripts': [
             'sign_detector = pai_rescue_robot.sign_detector:main',
             'mission_controller = pai_rescue_robot.mission_controller:main',
+            'obstacle_monitor = pai_rescue_robot.obstacle_monitor:main',
+            'mission_logger = pai_rescue_robot.mission_logger:main',
         ],
     },
 )

@@ -1,0 +1,22 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Test cache
+.pytest_cache/
+
+# Local backup files
+*.bak
+
+# Local archives
+*.tar.gz
+
+# Runtime logs
+logs/
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*~
