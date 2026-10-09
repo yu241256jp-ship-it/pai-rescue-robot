@@ -42,6 +42,7 @@ setup(
             'mission_controller = pai_rescue_robot.mission_controller:main',
             'obstacle_monitor = pai_rescue_robot.obstacle_monitor:main',
             'mission_logger = pai_rescue_robot.mission_logger:main',
+            'video_demo_manager = pai_rescue_robot.video_demo_manager:main',
         ],
     },
 )

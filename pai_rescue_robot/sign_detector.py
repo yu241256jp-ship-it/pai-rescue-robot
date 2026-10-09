@@ -41,7 +41,10 @@ class SignDetector(Node):
 
         self.history = deque(maxlen=5)
         self.minimum_votes = 3
-        self.minimum_score = 50000
+        self.declare_parameter('minimum_score', 50000)
+        self.minimum_score = int(
+            self.get_parameter('minimum_score').value
+        )
 
         self.active_label = None
         self.clear_count = 0
